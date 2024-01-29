@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4029ef37cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>shelfbookApp</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Book Shelf</h1>
+      </header>
+      <div class="wrapper">
+        <main>
+          <section>
+            <div class="book-list-header">
+              <div class="book-list-header-top">
+                <h2>New Book</h2>
+              </div>
+              <p>Save Your BOOKS here!</p>
+            </div>
+            <div class="__wrapper form">
+              <form id="book-form" class="book-form">
+                <div class="book-form-wrapper">
+                  <div class="input-form-book-container">
+                    <label for="title">Title</label>
+                    <input id="title" type="text" required />
+                  </div>
+                  <div class="input-form-book-container">
+                    <label for="author">Author</label>
+                    <input id="author" type="text" required />
+                  </div>
+                  <div class="input-form-book-container">
+                    <label for="year">Year</label>
+                    <input id="year" type="text" required />
+                  </div>
+                  <div class="input-form-book-container">
+                    <label for="isComplete">Finished</label>
+                    <input id="isComplete" type="checkbox" />
+                  </div>
+                  <button>ADD</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <section>
+            <div class="book-list-header">
+              <div class="book-list-header-top">
+                <h2>My Books</h2>
+                <button id="toggle-status-books-btn"></button>
+              </div>
+              <input id="search" type="search" placeholder="search book" />
+            </div>
+            <div class="__wrapper books">
+              <ul class="items">
+                <li>
+                  <div class="detail-items">
+                    <p>id</p>
+                    <p>title</p>
+                    <p>author</p>
+                    <p>year</p>
+                  </div>
+                  <div class="btn-act">
+                    <button>move</button>
+                    <button>delete</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="detail-items">
+                    <p>id</p>
+                    <p>title</p>
+                    <p>author</p>
+                    <p>year</p>
+                  </div>
+                  <div class="btn-act">
+                    <button>move</button>
+                    <button>delete</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
